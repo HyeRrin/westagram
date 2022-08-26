@@ -13,14 +13,14 @@ const leaveComment = function (e) {
   $inputChat.value = "";
 
   const likeIcon = document.createElement("img");
-  likeIcon.src = "../src/icon/heart.png";
+  likeIcon.src = "src/icon/heart.png";
   likeIcon.width = 14;
   likeIcon.height = 14;
   likeIcon.classList.add("img-heart-comment");
   wrapComment.appendChild(likeIcon);
 
   const deleteIcon = document.createElement("img");
-  deleteIcon.src = "../src/icon/delete.png";
+  deleteIcon.src = "src/icon/delete.png";
   deleteIcon.width = 10;
   deleteIcon.height = 10;
   deleteIcon.classList.add("img-delete-comment");
@@ -42,10 +42,10 @@ $inputChat.addEventListener("keyup", visibleButton);
 
 // 하트 & 지우기
 const controlImg = function (e) {
-  if (e.target.getAttribute("src") == "../src/icon/heart.png") {
-    e.target.setAttribute("src", "../src/icon/fullHeart.png");
-  } else if (e.target.getAttribute("src") == "../src/icon/fullHeart.png") {
-    e.target.setAttribute("src", "../src/icon/heart.png");
+  if (e.target.getAttribute("src") == "src/icon/heart.png") {
+    e.target.setAttribute("src", "src/icon/fullHeart.png");
+  } else if (e.target.getAttribute("src") == "src/icon/fullHeart.png") {
+    e.target.setAttribute("src", "src/icon/heart.png");
   }
   if (e.target.className === "img-delete-comment") {
     let parent = e.target.parentElement;
@@ -61,52 +61,52 @@ const idData = [
   {
     userId: "apple_01",
     userName: "새콤달콤",
-    userImg: "../src/img/profile/apple.jpg",
+    userImg: "src/img/profile/apple.jpg",
   },
   {
     userId: "applepie0101",
     userName: "파이는3.14",
-    userImg: "../src/img/profile/applepie.jpg",
+    userImg: "src/img/profile/applepie.jpg",
   },
   {
     userId: "peach_01",
     userName: "어피치가되고싶어",
-    userImg: "../src/img/profile/peach.jpg",
+    userImg: "src/img/profile/peach.jpg",
   },
   {
     userId: "peachcookie123",
     userName: "스윗복숭",
-    userImg: "../src/img/profile/peach_2.jpg",
+    userImg: "src/img/profile/peach_2.jpg",
   },
   {
     userId: "watermelon_03",
     userName: "수박수박수",
-    userImg: "../src/img/profile/watermelon.jpg",
+    userImg: "src/img/profile/watermelon.jpg",
   },
   {
     userId: "water33",
     userName: "삼다수",
-    userImg: "../src/img/profile/water.jpg",
+    userImg: "src/img/profile/water.jpg",
   },
   {
     userId: "lemon_04",
     userName: "레몽몽",
-    userImg: "../src/img/profile/lemon.jpg",
+    userImg: "src/img/profile/lemon.jpg",
   },
   {
     userId: "lemonpie4040",
     userName: "레몬파이",
-    userImg: "../src/img/profile/lemon.jpg",
+    userImg: "src/img/profile/lemon.jpg",
   },
   {
     userId: "candy_0426",
     userName: "사탕해",
-    userImg: "../src/img/profile/candy.jpg",
+    userImg: "src/img/profile/candy.jpg",
   },
   {
     userId: "cake2626",
     userName: "생일이다",
-    userImg: "../src/img/profile/cake.jpg",
+    userImg: "src/img/profile/cake.jpg",
   },
 ];
 
